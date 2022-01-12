@@ -2,7 +2,9 @@ package io.github.cranberry.examples;
 
 import io.github.ololx.cranberry.data.modifier.annotation.Final;
 
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * project cranberry-examples
@@ -12,13 +14,15 @@ import java.util.Set;
  */
 public final class FinalExamples {
 
-    public int finalLocalVariableExample() {
-        @Final Set<Integer> finalLocalVariable = Set.of(1, 2, 3, 4);
+    public int finalLocalVariableExample(Integer... numbers) {
+        @Final
+        List<Integer> finalLocalVariable = List.of(numbers == null ? new Integer[0] : numbers);
 
         return finalLocalVariable.stream().reduce(Integer::sum).orElse(0);
     }
 
-    public int finalMethodParamExample(@Final Set<Integer> finalMethodParam) {
-        return finalMethodParam.stream().reduce(Integer::sum).orElse(0);
+    public int finalMethodParamExample(@Final Integer... finalMethodParam) {
+        return Arrays.stream(finalMethodParam == null ? new Integer[0] : finalMethodParam)
+                .reduce(Integer::sum).orElse(0);
     }
 }
