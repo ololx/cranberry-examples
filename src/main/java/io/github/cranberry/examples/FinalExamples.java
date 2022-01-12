@@ -10,7 +10,7 @@ import java.util.Set;
  *
  * @author Alexander A. Kropotin
  */
-public class FinalExample {
+public class FinalExamples {
 
     public int finalLocalVariableExample() {
         @Final Set<Integer> finalLocalVariable = Set.of(1, 2, 3, 4);
