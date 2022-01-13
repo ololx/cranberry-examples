@@ -334,7 +334,7 @@
                 <version>${plugin.maven-surefire-plugin.version}</version>
                 <configuration>
                     <reportFormat>plain</reportFormat>
-                    <parallel>methods</parallel>
+                    <parallel>classes</parallel>
                     <threadCount>12</threadCount>
                     <systemPropertyVariables>
                         <jacoco-agent.destfile>**/jacoco.exec</jacoco-agent.destfile>

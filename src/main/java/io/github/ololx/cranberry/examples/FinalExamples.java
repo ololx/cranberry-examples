@@ -1,4 +1,4 @@
-package io.github.cranberry.examples;
+package io.github.ololx.cranberry.examples;
 
 import io.github.ololx.cranberry.data.modifier.annotation.Final;
 

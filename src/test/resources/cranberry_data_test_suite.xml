@@ -2,7 +2,8 @@
 <suite name="Cranberry Data Examples test suite">
     <test name="Final example annotation tests">
         <classes>
-            <class name="io.github.ololx.cranberry.statement.annotation.NotBlankAnnotationPositiveITest" />
+            <class name="io.github.ololx.cranberry.examples.FinalExamplesPositiveITest" />
+            <class name="io.github.ololx.cranberry.examples.FinalExamplesCranberryComparingWithVanillaPositiveITest" />
         </classes>
     </test>
 </suite>
