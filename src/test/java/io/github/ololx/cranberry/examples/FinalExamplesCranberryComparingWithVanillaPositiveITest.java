@@ -1,6 +1,6 @@
 package io.github.ololx.cranberry.examples;
 
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
@@ -16,23 +16,9 @@ import static org.testng.Assert.assertTrue;
  */
 public class FinalExamplesCranberryComparingWithVanillaPositiveITest extends FinalExamplesTest {
 
-    public final class VanillaFinalInstance {
-
-        public int finalLocalVariableExample(Integer... numbers) {
-            final List<Integer> finalLocalVariable = List.of(numbers == null ? new Integer[0] : numbers);
-
-            return finalLocalVariable.stream().reduce(Integer::sum).orElse(0);
-        }
-
-        public int finalMethodParamExample(final Integer... finalMethodParam) {
-            return Arrays.stream(finalMethodParam == null ? new Integer[0] : finalMethodParam)
-                    .reduce(Integer::sum).orElse(0);
-        }
-    }
-
     private static VanillaFinalInstance vanillaFinal;
 
-    @BeforeTest
+    @BeforeClass
     public void beforeTest() {
         finalExamples = new FinalExamples();
         vanillaFinal = new VanillaFinalInstance();
@@ -40,7 +26,7 @@ public class FinalExamplesCranberryComparingWithVanillaPositiveITest extends Fin
 
     @Test(dataProvider = "numbers")
     public void finalLocalVariableExample_whenInitializeLocalVariableByIntegers_thenTheirSumIsCalculatedForCranberryAndVanillaAreSame(Integer expectedNumbersSummary, Integer[] numberSequence) {
-        log.info(String.format("Run test with expected numbers summary = %d",   expectedNumbersSummary));
+        log.info(String.format("Run test with expected numbers summary = %d", expectedNumbersSummary));
         int cranberryActualNumbersSummary = finalExamples.finalLocalVariableExample(numberSequence);
         int vanillaActualNumbersSummary = vanillaFinal.finalLocalVariableExample(numberSequence);
         log.info(String.format(
@@ -67,7 +53,7 @@ public class FinalExamplesCranberryComparingWithVanillaPositiveITest extends Fin
 
     @Test(dataProvider = "numbers")
     public void finalMethodParamExample_whenPutIntegersToFinalParam_thenTheirSumIsCalculatedForCranberryAndVanillaAreSame(Integer expectedNumbersSummary, Integer[] numberSequence) {
-        log.info(String.format("Run test with expected numbers summary = %d",   expectedNumbersSummary));
+        log.info(String.format("Run test with expected numbers summary = %d", expectedNumbersSummary));
         int cranberryActualNumbersSummary = finalExamples.finalMethodParamExample(numberSequence);
         int vanillaActualNumbersSummary = vanillaFinal.finalMethodParamExample(numberSequence);
         log.info(String.format(
@@ -90,5 +76,19 @@ public class FinalExamplesCranberryComparingWithVanillaPositiveITest extends Fin
                 vanillaActualNumbersSummary == cranberryActualNumbersSummary,
                 "The vanilla actual numbers summary and the cranberry actual numbers summary are different"
         );
+    }
+
+    public final class VanillaFinalInstance {
+
+        public int finalLocalVariableExample(Integer... numbers) {
+            final List<Integer> finalLocalVariable = List.of(numbers == null ? new Integer[0] : numbers);
+
+            return finalLocalVariable.stream().reduce(Integer::sum).orElse(0);
+        }
+
+        public int finalMethodParamExample(final Integer... finalMethodParam) {
+            return Arrays.stream(finalMethodParam == null ? new Integer[0] : finalMethodParam)
+                    .reduce(Integer::sum).orElse(0);
+        }
     }
 }

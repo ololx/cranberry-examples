@@ -2,9 +2,8 @@ package io.github.ololx.cranberry.examples;
 
 import io.github.ololx.cranberry.data.modifier.annotation.Final;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * project cranberry-examples

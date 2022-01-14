@@ -1,5 +1,7 @@
 package io.github.ololx.cranberry.examples;
 
+import io.github.ololx.cranberry.examples.FinalExamples;
+import io.github.ololx.cranberry.examples.FinalExamplesTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -20,7 +22,7 @@ public class FinalExamplesPositiveITest extends FinalExamplesTest {
 
     @Test(dataProvider = "numbers")
     public void finalLocalVariableExample_whenInitializeLocalVariableByIntegers_thenTheirSumIsCalculatedAsUsual(Integer expectedNumbersSummary, Integer[] numberSequence) {
-        log.info(String.format("Run test with expected numbers summary = %d",   expectedNumbersSummary));
+        log.info(String.format("Run test with expected numbers summary = %d", expectedNumbersSummary));
         int actualNumbersSummary = finalExamples.finalLocalVariableExample(numberSequence);
         log.info(String.format("Complete test with actual numbers summary = %d", actualNumbersSummary));
 
@@ -32,7 +34,7 @@ public class FinalExamplesPositiveITest extends FinalExamplesTest {
 
     @Test(dataProvider = "numbers")
     public void finalMethodParamExample_whenPutIntegersToFinalParam_thenTheirSumIsCalculatedAsUsual(Integer expectedNumbersSummary, Integer[] numberSequence) {
-        log.info(String.format("Run test with expected numbers summary = %d",   expectedNumbersSummary));
+        log.info(String.format("Run test with expected numbers summary = %d", expectedNumbersSummary));
         int actualNumbersSummary = finalExamples.finalMethodParamExample(numberSequence);
         log.info(String.format("Complete test with actual numbers summary = %d", actualNumbersSummary));
 
