@@ -10,13 +10,25 @@ import io.github.ololx.cranberry.statement.annotation.NotBlank;
  */
 public final class NotBlankExamples {
 
-    public String notBlankLocalVariableExample(String number) {
+    /**
+     * Not blank local variable example string.
+     *
+     * @param str the str
+     * @return the string
+     */
+    public String notBlankLocalVariableExample(String str) {
         @NotBlank
-        String notBlankLocalVariable = number;
+        String notBlankLocalVariable = str;
 
         return notBlankLocalVariable;
     }
 
+    /**
+     * Not blank method param example string.
+     *
+     * @param notBlankMethodParam the not blank method param
+     * @return the string
+     */
     public String notBlankMethodParamExample(@NotBlank String notBlankMethodParam) {
         return notBlankMethodParam;
     }

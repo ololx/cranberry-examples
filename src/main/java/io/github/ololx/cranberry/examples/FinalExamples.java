@@ -13,6 +13,12 @@ import java.util.List;
  */
 public final class FinalExamples {
 
+    /**
+     * Final local variable example int.
+     *
+     * @param numbers the numbers
+     * @return the int
+     */
     public int finalLocalVariableExample(Integer... numbers) {
         @Final
         List<Integer> finalLocalVariable = List.of(numbers == null ? new Integer[0] : numbers);
@@ -20,6 +26,12 @@ public final class FinalExamples {
         return finalLocalVariable.stream().reduce(Integer::sum).orElse(0);
     }
 
+    /**
+     * Final method param example int.
+     *
+     * @param finalMethodParam the final method param
+     * @return the int
+     */
     public int finalMethodParamExample(@Final Integer... finalMethodParam) {
         return Arrays.stream(finalMethodParam == null ? new Integer[0] : finalMethodParam)
                 .reduce(Integer::sum).orElse(0);

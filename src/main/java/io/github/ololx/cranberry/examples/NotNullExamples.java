@@ -10,6 +10,12 @@ import io.github.ololx.cranberry.statement.annotation.NotNull;
  */
 public final class NotNullExamples {
 
+    /**
+     * Not null local variable example int.
+     *
+     * @param number the number
+     * @return the int
+     */
     public int notNullLocalVariableExample(Integer number) {
         @NotNull
         Integer notNullLocalVariable = number;
@@ -17,6 +23,12 @@ public final class NotNullExamples {
         return notNullLocalVariable;
     }
 
+    /**
+     * Not null method param example int.
+     *
+     * @param notNullMethodParam the not null method param
+     * @return the int
+     */
     public int notNullMethodParamExample(@NotNull Integer notNullMethodParam) {
         return notNullMethodParam;
     }
