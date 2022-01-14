@@ -97,7 +97,6 @@
         <plugin.maven-compiler-plugin.version>3.8.1</plugin.maven-compiler-plugin.version>
         <plugin.maven-jar-plugin.version>3.1.1</plugin.maven-jar-plugin.version>
         <plugin.maven-dependency-plugin.version>3.1.1</plugin.maven-dependency-plugin.version>
-        <plugin.maven-surefire-plugin.version>3.0.0-M5</plugin.maven-surefire-plugin.version>
         <plugin.maven-resources-plugin.version>3.1.0</plugin.maven-resources-plugin.version>
         <!--plugins versions]-->
     </properties>
@@ -105,15 +104,6 @@
 
     <!--[dependencies-->
     <dependencies>
-        <!--[test-->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${dependency.testng.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!--test]-->
-
         <!--[cranberry project modules-->
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -327,27 +317,6 @@
                 </configuration>
             </plugin>
             <!--packaging to jar]-->
-
-            <!--[testing-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${plugin.maven-surefire-plugin.version}</version>
-                <configuration>
-                    <reportFormat>plain</reportFormat>
-                    <parallel>classes</parallel>
-                    <threadCount>12</threadCount>
-                    <systemPropertyVariables>
-                        <jacoco-agent.destfile>**/jacoco.exec</jacoco-agent.destfile>
-                    </systemPropertyVariables>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>
-                            ${project.basedir}/src/test/resources/cranberry_data_test_suite.xml
-                        </suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
-            </plugin>
-            <!--testing]-->
 
             <!--[managing resources-->
             <plugin>

@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Cranberry Data Examples test suite">
-    <test name="Final example annotation tests">
-        <classes>
-            <class name="io.github.ololx.cranberry.examples.FinalExamplesPositiveITest"/>
-        </classes>
-    </test>
-</suite>
