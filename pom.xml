@@ -108,7 +108,7 @@
     <dependencies>
         <!--[cranberry project modules-->
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>io.github.ololx.cranberry</groupId>
             <artifactId>cranberry-muffin</artifactId>
             <version>${dependency.cranberry-muffin.version}</version>
             <scope>provided</scope>
@@ -262,7 +262,7 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <annotationProcessorPaths>
                         <path>
-                            <groupId>io.github.cranberry</groupId>
+                            <groupId>io.github.ololx.cranberry</groupId>
                             <artifactId>cranberry-muffin</artifactId>
                             <version>${dependency.cranberry-muffin.version}</version>
                         </path>
