@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.data;
 
 import io.github.ololx.cranberry.data.modifier.annotation.Final;
@@ -42,7 +43,7 @@ public final class FinalLocalVariableExamples {
      * @param object the some object
      * @return the object
      */
-    public Object finalLocalVariableExample(Object object) {
+    public Object finalObjectVariableExample(Object object) {
         @Final Object finalLocalVariable = object;
 
         return finalLocalVariable;

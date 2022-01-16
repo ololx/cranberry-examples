@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.statement;
 
 import io.github.ololx.cranberry.statement.annotation.NotBlank;
@@ -42,7 +43,7 @@ public final class NotBlankMethodParamExamples {
      * @param notBlankMethodParam the not blank method param
      * @return the string
      */
-    public String notBlankMethodParamDefaultExample(@NotBlank String notBlankMethodParam) {
+    public String notBlankStringParamDefaultExample(@NotBlank String notBlankMethodParam) {
         return notBlankMethodParam;
     }
 
@@ -52,7 +53,7 @@ public final class NotBlankMethodParamExamples {
      * @param notBlankMethodParam the not blank method param
      * @return the string
      */
-    public String notBlankMethodParamCustomMessageExample(
+    public String notBlankStringParamCustomMessageExample(
             @NotBlank(message = "The param is blank, Bro =)") String notBlankMethodParam) {
         return notBlankMethodParam;
     }

@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.data;
 
 import io.github.ololx.cranberry.data.modifier.annotation.Final;
@@ -42,7 +43,7 @@ public final class FinalMethodParamExamples {
      * @param finalMethodParam the final method param
      * @return the object
      */
-    public Object finalMethodParamExample(@Final Object finalMethodParam) {
+    public Object finalObjectParamExample(@Final Object finalMethodParam) {
         return finalMethodParam;
     }
 }

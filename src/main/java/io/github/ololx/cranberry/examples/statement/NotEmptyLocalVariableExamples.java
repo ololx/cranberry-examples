@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.statement;
 
 import io.github.ololx.cranberry.statement.annotation.NotEmpty;
@@ -46,7 +47,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param str the str
      * @return the string
      */
-    public String notEmptyLocalVariableDefaultExample(String str) {
+    public String notEmptyStringVariableDefaultExample(String str) {
         @NotEmpty String notEmptyLocalVariable = str;
 
         return notEmptyLocalVariable;
@@ -58,7 +59,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param str the str
      * @return the string
      */
-    public String notEmptyLocalVariableCustomMessageExample(String str) {
+    public String notEmptyStringVariableCustomMessageExample(String str) {
         @NotEmpty(message = "The variable is empty, Bro =)")
         String notEmptyLocalVariable = str;
 
@@ -71,7 +72,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param list the list
      * @return the list
      */
-    public List<String> notEmptyLocalVariableDefaultExample(List<String> list) {
+    public List<String> notEmptyListVariableDefaultExample(List<String> list) {
         @NotEmpty List<String> notEmptyLocalVariable = list;
 
         return notEmptyLocalVariable;
@@ -83,7 +84,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param list the list
      * @return the list
      */
-    public List<String> notEmptyLocalVariableCustomMessageExample(List<String> list) {
+    public List<String> notEmptyListVariableCustomMessageExample(List<String> list) {
         @NotEmpty(message = "The variable is empty, Bro =)")
         List<String> notEmptyLocalVariable = list;
 
@@ -96,7 +97,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param set the set
      * @return the set
      */
-    public Set<String> notEmptyLocalVariableDefaultExample(Set<String> set) {
+    public Set<String> notEmptySetVariableDefaultExample(Set<String> set) {
         @NotEmpty Set<String> notEmptyLocalVariable = set;
 
         return notEmptyLocalVariable;
@@ -108,7 +109,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param set the set
      * @return the set
      */
-    public Set<String> notEmptyLocalVariableCustomMessageExample(Set<String> set) {
+    public Set<String> notEmptySetVariableCustomMessageExample(Set<String> set) {
         @NotEmpty(message = "The variable is empty, Bro =)")
         Set<String> notEmptyLocalVariable = set;
 
@@ -121,7 +122,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param map the map
      * @return the map
      */
-    public Map<String, String> notEmptyLocalVariableDefaultExample(Map<String, String> map) {
+    public Map<String, String> notEmptyMapVariableDefaultExample(Map<String, String> map) {
         @NotEmpty Map<String, String> notEmptyLocalVariable = map;
 
         return notEmptyLocalVariable;
@@ -133,7 +134,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param map the map
      * @return the map
      */
-    public Map<String, String> notEmptyLocalVariableCustomMessageExample(Map<String, String> map) {
+    public Map<String, String> notEmptyMapVariableCustomMessageExample(Map<String, String> map) {
         @NotEmpty(message = "The variable is empty, Bro =)")
         Map<String, String> notEmptyLocalVariable = map;
 
@@ -146,7 +147,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param array the array
      * @return the string [ ]
      */
-    public String[] notEmptyLocalVariableDefaultExample(String[] array) {
+    public String[] notEmptyArrayVariableDefaultExample(String[] array) {
         @NotEmpty String[] notEmptyLocalVariable = array;
 
         return notEmptyLocalVariable;
@@ -158,7 +159,7 @@ public final class NotEmptyLocalVariableExamples {
      * @param array the array
      * @return the string [ ]
      */
-    public String[] notEmptyLocalVariableCustomMessageExample(String[] array) {
+    public String[] notEmptyArrayVariableCustomMessageExample(String[] array) {
         @NotEmpty(message = "The variable is empty, Bro =)")
         String[] notEmptyLocalVariable = array;
 

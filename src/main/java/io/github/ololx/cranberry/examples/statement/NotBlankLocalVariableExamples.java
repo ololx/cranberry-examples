@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.statement;
 
 import io.github.ololx.cranberry.statement.annotation.NotBlank;
@@ -42,7 +43,7 @@ public final class NotBlankLocalVariableExamples {
      * @param str the str
      * @return the string
      */
-    public String notBlankLocalVariableDefaultExample(String str) {
+    public String notBlankStringVariableDefaultExample(String str) {
         @NotBlank String notBlankLocalVariable = str;
 
         return notBlankLocalVariable;
@@ -54,7 +55,7 @@ public final class NotBlankLocalVariableExamples {
      * @param str the str
      * @return the string
      */
-    public String notBlankLocalVariableCustomMessageExample(String str) {
+    public String notBlankStringVariableCustomMessageExample(String str) {
         @NotBlank(message = "The variable is blank, Bro =)")
         String notBlankLocalVariable = str;
 

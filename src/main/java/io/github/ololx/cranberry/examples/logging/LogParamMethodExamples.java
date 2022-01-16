@@ -24,6 +24,7 @@
  *
  * For more information, please refer to <https://unlicense.org>
  */
+
 package io.github.ololx.cranberry.examples.logging;
 
 import io.github.ololx.cranberry.logging.annotation.LogParam;
@@ -36,7 +37,7 @@ import java.util.List;
  *
  * @author Alexander A. Kropotin
  */
-public class LogParamMethodExamples {
+public final class LogParamMethodExamples {
 
     /**
      * Log param method default example.

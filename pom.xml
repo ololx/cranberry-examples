@@ -14,7 +14,9 @@
     <!--[info-->
     <name>${project.groupId}:${project.artifactId}</name>
     <description>
-        This is a repository with examples of cranberry library usage.
+        This is a repository with the cranberry usage examples.
+        For more details please visit the cranberry repository
+        by the following link - https://github.com/ololx/cranberry
     </description>
     <url>https://github.com/ololx/cranberry-examples</url>
     <inceptionYear>2022</inceptionYear>
