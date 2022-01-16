@@ -13,7 +13,7 @@ The Cranberry Examples
 ```
 
 # Cranberry Examples
-This is a repository with examples of cranberry library usage
+This is a repository with the cranberry usage examples. For more details please visit the [cranberry](https://github.com/ololx/cranberry) repository.
 
 [![osslifecycle](https://img.shields.io/osslifecycle/ololx/cranberry-examples?style=flat)](OSSMETADATA) [![last_commit](https://img.shields.io/github/last-commit/ololx/cranberry-examples?style=flat&logo=github)](https://github.com/ololx/cranberry-examples/commits)
 
@@ -24,3 +24,43 @@ This is a repository with examples of cranberry library usage
 ![repo_size](https://img.shields.io/github/repo-size/ololx/cranberry-examples?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/cranberry-examples?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/cranberry-examples?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/cranberry-examples?style=flat&logo=github)
 
 ![requires_java](https://img.shields.io/badge/requires_java-11+-important)
+
+## 📇 Table of Contents
+
+- [About](#-about-)
+- [Demo](#-demo-)
+- [Built With](#-built-with-)
+- [Contributing](#-contributing-)
+- [Code of Conduct](#-code-of-conduct-)
+- [Versioning](#-versioning-)
+- [Authors](#-authors-)
+- [Licensing](#-licensing-)
+
+##  📖 About
+
+This is a repository with the cranberry usage examples. The examples just show how cranberry annotations can be used in code. Examples in packages - each case in its own class. For more details please visit the [cranberry](https://github.com/ololx/cranberry) repository.
+
+## 🛠 Built With
+
+- **[Maven](https://maven.apache.org/)** - Dependency Management.
+
+## 🎉 Contributing
+
+If you want to contribute this project - you are welcome and have fun.
+Please visit the [contributing](CONTRIBUTING.md) section for details on this code of conduct, and the process for submitting pull requests.
+
+## 📝 Code of Conduct
+
+In order to ensure that all is welcoming, please review and abide by the [code of conduct](CODE_OF_CONDUCT.md).
+
+## 🗒 Versioning
+
+For the versioning is used [Semantic Versioning](http://semver.org/). For the versions available, see the [changelog](CHANGELOG.md) or the tags on this repository.
+
+## ©️ Authors
+
+* **Alexander A. Kropotin** - *Initial work* - [ololx](https://github.com/ololx).
+
+## 🔏 Licensing
+
+This project is unlicensed - see the [lisence](LICENSE) document for details.
