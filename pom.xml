@@ -260,13 +260,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>io.github.ololx.cranberry</groupId>
-                            <artifactId>cranberry-muffin</artifactId>
-                            <version>${dependency.cranberry-muffin.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <!--compiling source]-->
