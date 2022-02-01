@@ -56,7 +56,8 @@ public class NotNullConstructorParamExamples {
          * @param notNullConstructorParam the not null constructor param
          */
         NotNullObjectParamWithMessageExample(
-                @NotNull(message = "The constructor param is empty, Bro =)") Object notNullConstructorParam) {
+                @NotNull(message = "The constructor param is null, Bro =)")
+                        Object notNullConstructorParam) {
             this.obj = notNullConstructorParam;
         }
     }
