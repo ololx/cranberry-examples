@@ -54,7 +54,7 @@ public final class NotNullMethodParamExamples {
      * @return the object
      */
     public Object notNullObjectParamCustomMessageExample(
-            @NotNull(message = "The variable is empty, Bro =)") Object notNullMethodParam) {
+            @NotNull(message = "The param is empty, Bro =)") Object notNullMethodParam) {
         return notNullMethodParam;
     }
 }
