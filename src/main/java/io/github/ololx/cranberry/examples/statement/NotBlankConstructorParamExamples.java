@@ -31,15 +31,15 @@ public class NotBlankConstructorParamExamples {
      */
     class NotBlankStringParamDefaultExample {
 
-        private Object obj;
+        private String str;
 
         /**
          * Instantiates a new Not blank string param default example.
          *
-         * @param notNullConstructorParam the not null constructor param
+         * @param notBlankConstructorParam the not Blank constructor param
          */
-        NotBlankStringParamDefaultExample(@NotBlank Object notNullConstructorParam) {
-            this.obj = notNullConstructorParam;
+        NotBlankStringParamDefaultExample(@NotBlank String notBlankConstructorParam) {
+            this.str = notBlankConstructorParam;
         }
     }
 
@@ -48,17 +48,17 @@ public class NotBlankConstructorParamExamples {
      */
     class NotBlankStringParamWithMessageExample {
 
-        private Object obj;
+        private String str;
 
         /**
          * Instantiates a new Not blank string param with message example.
          *
-         * @param notNullConstructorParam the not null constructor param
+         * @param notBlankConstructorParam the not Blank constructor param
          */
         NotBlankStringParamWithMessageExample(
                 @NotBlank(message = "The constructor param is blank, Bro =)")
-                        Object notNullConstructorParam) {
-            this.obj = notNullConstructorParam;
+                        String notBlankConstructorParam) {
+            this.str = notBlankConstructorParam;
         }
     }
 }

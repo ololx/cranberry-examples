@@ -69,8 +69,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the list
      */
-    public List<String> notEmptyListParamDefaultExample(
-            @NotEmpty List<String> notEmptyMethodParam) {
+    public List<Object> notEmptyListParamDefaultExample(
+            @NotEmpty List<Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -80,8 +80,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the list
      */
-    public List<String> notEmptyListParamCustomMessageExample(
-            @NotEmpty(message = "The param is empty, Bro =)") List<String> notEmptyMethodParam) {
+    public List<Object> notEmptyListParamCustomMessageExample(
+            @NotEmpty(message = "The param is empty, Bro =)") List<Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -91,8 +91,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the set
      */
-    public Set<String> notEmptySetParamDefaultExample(
-            @NotEmpty Set<String> notEmptyMethodParam) {
+    public Set<Object> notEmptySetParamDefaultExample(
+            @NotEmpty Set<Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -102,8 +102,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the set
      */
-    public Set<String> notEmptySetParamCustomMessageExample(
-            @NotEmpty(message = "The param is empty, Bro =)") Set<String> notEmptyMethodParam) {
+    public Set<Object> notEmptySetParamCustomMessageExample(
+            @NotEmpty(message = "The param is empty, Bro =)") Set<Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -113,8 +113,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the map
      */
-    public Map<String, Map> notEmptyMapParamDefaultExample(
-            @NotEmpty Map<String, Map> notEmptyMethodParam) {
+    public Map<Object, Object> notEmptyMapParamDefaultExample(
+            @NotEmpty Map<Object, Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -124,8 +124,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the map
      */
-    public Map<String, Map> notEmptyMapParamCustomMessageExample(
-            @NotEmpty(message = "The param is empty, Bro =)") Map<String, Map> notEmptyMethodParam) {
+    public Map<Object, Object> notEmptyMapParamCustomMessageExample(
+            @NotEmpty(message = "The param is empty, Bro =)") Map<Object, Object> notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -135,8 +135,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the string [ ]
      */
-    public String[] notEmptyArrayParamDefaultExample(
-            @NotEmpty String[] notEmptyMethodParam) {
+    public Object[] notEmptyArrayParamDefaultExample(
+            @NotEmpty Object[] notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 
@@ -146,8 +146,8 @@ public final class NotEmptyMethodParamExamples {
      * @param notEmptyMethodParam the not empty method param
      * @return the string [ ]
      */
-    public String[] notEmptyArrayParamCustomMessageExample(
-            @NotEmpty(message = "The param is empty, Bro =)") String[] notEmptyMethodParam) {
+    public Object[] notEmptyArrayParamCustomMessageExample(
+            @NotEmpty(message = "The param is empty, Bro =)") Object[] notEmptyMethodParam) {
         return notEmptyMethodParam;
     }
 }
